@@ -13,6 +13,8 @@
 		8C04C77626A7BBFE002DFE8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C04C77426A7BBFE002DFE8E /* Main.storyboard */; };
 		8C04C77826A7BC00002DFE8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C04C77726A7BC00002DFE8E /* Assets.xcassets */; };
 		8C04C77B26A7BC00002DFE8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C04C77926A7BC00002DFE8E /* LaunchScreen.storyboard */; };
+		8C4341DD26A99B5300224358 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4341DC26A99B5300224358 /* QuizViewController.swift */; };
+		8C4341DF26A99C3500224358 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4341DE26A99C3500224358 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8C04C77726A7BC00002DFE8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C04C77A26A7BC00002DFE8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C04C77C26A7BC00002DFE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4341DC26A99B5300224358 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		8C4341DE26A99C3500224358 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				8C04C77026A7BBFE002DFE8E /* SceneDelegate.swift */,
 				8C04C77226A7BBFE002DFE8E /* ViewController.swift */,
 				8C04C77426A7BBFE002DFE8E /* Main.storyboard */,
+				8C4341DE26A99C3500224358 /* ScoreViewController.swift */,
+				8C4341DC26A99B5300224358 /* QuizViewController.swift */,
 				8C04C77726A7BC00002DFE8E /* Assets.xcassets */,
 				8C04C77926A7BC00002DFE8E /* LaunchScreen.storyboard */,
 				8C04C77C26A7BC00002DFE8E /* Info.plist */,
@@ -139,7 +145,9 @@
 			files = (
 				8C04C77326A7BBFE002DFE8E /* ViewController.swift in Sources */,
 				8C04C76F26A7BBFE002DFE8E /* AppDelegate.swift in Sources */,
+				8C4341DF26A99C3500224358 /* ScoreViewController.swift in Sources */,
 				8C04C77126A7BBFE002DFE8E /* SceneDelegate.swift in Sources */,
+				8C4341DD26A99B5300224358 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
