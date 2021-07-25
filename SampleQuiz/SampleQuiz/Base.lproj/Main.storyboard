@@ -105,6 +105,14 @@
                         <viewLayoutGuide key="safeArea" id="Kz5-6J-m0k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="answerButton1" destination="Y4M-wY-yJr" id="fc9-xf-GPl"/>
+                        <outlet property="answerButton2" destination="RRT-tF-6lo" id="KAX-Ui-jxR"/>
+                        <outlet property="answerButton3" destination="kXk-tw-34F" id="Hts-Zr-Jxx"/>
+                        <outlet property="answerButton4" destination="5Sz-68-SEc" id="43L-s7-AIs"/>
+                        <outlet property="quizNumberLabel" destination="ZBu-Yh-5U5" id="cvC-qh-35u"/>
+                        <outlet property="quizTextView" destination="aN7-3s-2g3" id="7dA-t8-ScO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVU-BO-FXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
