@@ -14,6 +14,7 @@ class QuizViewController: UIViewController {
     @IBOutlet var answerButton2: UIButton!
     @IBOutlet var answerButton3: UIButton!
     @IBOutlet var answerButton4: UIButton!
+    @IBOutlet var judgeImageView: UIImageView!
     
     var csvArray: [String] = []
     var quizArray: [String] = []
@@ -54,11 +55,33 @@ class QuizViewController: UIViewController {
         if sender.tag == Int(quizArray[1]) {
             correctCount += 1
             print("正解")
+            // ○画像
+            judgeImageView.image = UIImage(named: "correct")
+            
         } else {
             print("不正解")
+            // ×画像
+            judgeImageView.image = UIImage(named: "incorrect")
         }
         print("スコア:\(correctCount)")
-        nextQuiz()
+        // 2問目以降も○×を表示する
+        judgeImageView.isHidden = false
+        // ○×が非表示になるまでButtonを押せなくする (ダブルタップ防止)
+        answerButton1.isEnabled = false
+        answerButton2.isEnabled = false
+        answerButton3.isEnabled = false
+        answerButton4.isEnabled = false
+        // ○×を0.5秒後に非表示する
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.judgeImageView.isHidden = true
+            // ○×が非表示になったらButtonを押せるようにする
+            self.answerButton1.isEnabled = true
+            self.answerButton2.isEnabled = true
+            self.answerButton3.isEnabled = true
+            self.answerButton4.isEnabled = true
+            // ○×が非表示になってから次の問題をセット
+            self.nextQuiz()
+        }
     }
     
     // 次の問題を表示させるブロック
