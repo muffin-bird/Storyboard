@@ -8,11 +8,23 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
+    @IBOutlet var scoreLabel: UILabel!
+    
+    // correctCountを受け取る変数
+    var correct = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scoreLabel.text = "\(correct)問正解!"
 
         // Do any additional setup after loading the view.
+    }
+    
+    // トップに戻るButton紐づけ
+    @IBAction func toTopButtonAction(_ sender: Any) {
+        // トップに戻る処理
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
     
 

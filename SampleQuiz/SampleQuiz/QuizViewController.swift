@@ -18,9 +18,11 @@ class QuizViewController: UIViewController {
     var csvArray: [String] = []
     var quizArray: [String] = []
     var quizCount = 0
+    var correctCount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // csvArrayに代入(csvファイル)
         csvArray = loadCSV(fileName: "quiz")
@@ -40,14 +42,22 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // スコア画面に移動したときに値を渡す
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let scoreVC = segue.destination as! ScoreViewController
+        scoreVC.correct = correctCount
+    }
+    
     // Buttonを押したときに呼ばれる
     @IBAction func btnAction(sender: UIButton) {
         // 正誤判定
         if sender.tag == Int(quizArray[1]) {
+            correctCount += 1
             print("正解")
         } else {
             print("不正解")
         }
+        print("スコア:\(correctCount)")
         nextQuiz()
     }
     
