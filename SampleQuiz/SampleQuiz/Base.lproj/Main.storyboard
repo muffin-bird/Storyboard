@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1059" y="138"/>
+            <point key="canvasLocation" x="-1022" y="138"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="Qeb-HM-wVh">
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVU-BO-FXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="138"/>
+            <point key="canvasLocation" x="528" y="138"/>
         </scene>
         <!--Select Level View Controller-->
         <scene sceneID="9TR-tR-Qg6">
@@ -170,6 +170,9 @@
                         <viewLayoutGuide key="safeArea" id="lsO-0I-anD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="3b9-KA-wV5" kind="presentation" identifier="toQuizVC" id="UKe-yE-mNM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeN-sB-t9D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
