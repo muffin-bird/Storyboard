@@ -18,6 +18,7 @@
 		8C3A510526AD9A080088AC5E /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C3A510426AD9A080088AC5E /* quiz.csv */; };
 		8C4341DD26A99B5300224358 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4341DC26A99B5300224358 /* QuizViewController.swift */; };
 		8C4341DF26A99C3500224358 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4341DE26A99C3500224358 /* ScoreViewController.swift */; };
+		8CBE177E26B3B9C400B75C98 /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBE177D26B3B9C400B75C98 /* SelectLevelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8C3A510426AD9A080088AC5E /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = quiz.csv; sourceTree = "<group>"; };
 		8C4341DC26A99B5300224358 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		8C4341DE26A99C3500224358 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		8CBE177D26B3B9C400B75C98 /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				8C04C77026A7BBFE002DFE8E /* SceneDelegate.swift */,
 				8C04C77226A7BBFE002DFE8E /* ViewController.swift */,
 				8C04C77426A7BBFE002DFE8E /* Main.storyboard */,
+				8CBE177D26B3B9C400B75C98 /* SelectLevelViewController.swift */,
 				8C3A510426AD9A080088AC5E /* quiz.csv */,
 				8C4341DE26A99C3500224358 /* ScoreViewController.swift */,
 				8C4341DC26A99B5300224358 /* QuizViewController.swift */,
@@ -168,6 +171,7 @@
 				8C4341DF26A99C3500224358 /* ScoreViewController.swift in Sources */,
 				8C04C77126A7BBFE002DFE8E /* SceneDelegate.swift in Sources */,
 				8C4341DD26A99B5300224358 /* QuizViewController.swift in Sources */,
+				8CBE177E26B3B9C400B75C98 /* SelectLevelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
