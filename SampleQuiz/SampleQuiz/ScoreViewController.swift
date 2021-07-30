@@ -24,7 +24,7 @@ class ScoreViewController: UIViewController {
     // トップに戻るButton紐づけ
     @IBAction func toTopButtonAction(_ sender: Any) {
         // トップに戻る処理
-        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
     
 

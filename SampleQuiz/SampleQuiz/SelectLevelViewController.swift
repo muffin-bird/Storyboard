@@ -8,6 +8,8 @@
 import UIKit
 
 class SelectLevelViewController: UIViewController {
+    
+    var selectTag = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,8 +17,18 @@ class SelectLevelViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // 問題画面に値を渡す
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let quizVC = segue.destination as! QuizViewController
+        quizVC.selectLevel = selectTag
+    }
+    
     @IBAction func levelButtonAction(sender: UIButton) {
         print(sender.tag)
+        // 選択したTagを代入
+        selectTag = sender.tag
+        // Buttonを押したときに問題画面に遷移
+        performSegue(withIdentifier: "toQuizVC", sender: nil)
     }
     
 
