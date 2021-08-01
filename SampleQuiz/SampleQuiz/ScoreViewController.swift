@@ -21,6 +21,13 @@ class ScoreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // シェアするButton紐づけ
+    @IBAction func shareButtonAction(_ sender: Any) {
+        let activityItems = ["\(correct)門正解しました。", "#クイズアプリ"]
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        self.present(activityVC, animated: true)
+    }
+    
     // トップに戻るButton紐づけ
     @IBAction func toTopButtonAction(_ sender: Any) {
         // トップに戻る処理

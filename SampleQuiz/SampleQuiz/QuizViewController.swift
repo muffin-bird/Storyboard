@@ -32,8 +32,10 @@ class QuizViewController: UIViewController {
         // csvArrayに代入(csvファイル)
         // 難易度の番号 (selectLevel)
         csvArray = loadCSV(fileName: "quiz\(selectLevel)")
-        print(csvArray)
         
+        // 問題をシャッフルする
+        csvArray.shuffle()
+
         // quizArrayに1問文のデータを代入
         quizArray = csvArray[quizCount].components(separatedBy: ",")
         
