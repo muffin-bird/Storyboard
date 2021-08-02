@@ -9,6 +9,8 @@ import UIKit
 
 class ScoreViewController: UIViewController {
     @IBOutlet var scoreLabel: UILabel!
+    @IBOutlet var shareButton: UIButton!
+    @IBOutlet var returnTopButton: UIButton!
     
     // correctCountを受け取る変数
     var correct = 0
@@ -17,6 +19,11 @@ class ScoreViewController: UIViewController {
         super.viewDidLoad()
         
         scoreLabel.text = "\(correct)問正解!"
+        
+        shareButton.layer.borderWidth = 2
+        shareButton.layer.borderColor = UIColor.black.cgColor
+        returnTopButton.layer.borderWidth = 2
+        returnTopButton.layer.borderColor = UIColor.black.cgColor
 
         // Do any additional setup after loading the view.
     }
