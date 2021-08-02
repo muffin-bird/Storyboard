@@ -47,6 +47,7 @@ class QuizViewController: UIViewController {
         answerButton3.setTitle(quizArray[4], for: .normal)
         answerButton4.setTitle(quizArray[5], for: .normal)
         
+        // 枠線設定
         answerButton1.layer.borderWidth = 2
         answerButton1.layer.borderColor = UIColor.black.cgColor
         answerButton2.layer.borderWidth = 2
