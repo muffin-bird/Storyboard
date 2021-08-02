@@ -140,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVU-BO-FXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="527.536231884058" y="137.94642857142856"/>
+            <point key="canvasLocation" x="533" y="138"/>
         </scene>
         <!--Select Level View Controller-->
         <scene sceneID="9TR-tR-Qg6">
@@ -217,10 +217,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrq-wy-glS">
-                                <rect key="frame" x="116" y="424" width="182" height="48"/>
+                                <rect key="frame" x="63" y="424" width="290" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="トップに戻る"/>
+                                <state key="normal" title="トップに戻る">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="toTopButtonAction:" destination="s2f-cy-JuY" eventType="touchUpInside" id="5zC-IR-cig"/>
                                 </connections>
@@ -228,15 +231,18 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOz-UO-FSk">
                                 <rect key="frame" x="0.0" y="150" width="414" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ck4-5g-EVT">
-                                <rect key="frame" x="87" y="253" width="243" height="48"/>
+                                <rect key="frame" x="63" y="253" width="290" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="結果をシェアする"/>
+                                <state key="normal" title="結果をシェアする">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="shareButtonAction:" destination="s2f-cy-JuY" eventType="touchUpInside" id="ZRA-xO-AEM"/>
                                 </connections>
@@ -246,12 +252,14 @@
                         <color key="backgroundColor" red="0.94886285069999998" green="0.86551868919999997" blue="0.96502202749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="returnTopButton" destination="Vrq-wy-glS" id="jgT-sc-n4I"/>
                         <outlet property="scoreLabel" destination="zOz-UO-FSk" id="gr4-Pf-Abl"/>
+                        <outlet property="shareButton" destination="ck4-5g-EVT" id="k3R-Uk-cfr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNS-1v-FaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1303" y="138"/>
+            <point key="canvasLocation" x="1302.8985507246377" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
