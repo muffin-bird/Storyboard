@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,7 +64,6 @@
 				713D3A681B2F8B1607AEF304 /* Pods-SampleQuiz.debug.xcconfig */,
 				96AA920FB92894C649F42DD8 /* Pods-SampleQuiz.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -406,7 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.muffinmen617.SampleQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -426,7 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.muffinmen617.SampleQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
