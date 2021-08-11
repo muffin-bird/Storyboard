@@ -13,8 +13,6 @@ class QuizViewController: UIViewController {
     @IBOutlet var quizTextView: UITextView!
     @IBOutlet var answerButton1: UIButton!
     @IBOutlet var answerButton2: UIButton!
-    @IBOutlet var answerButton3: UIButton!
-    @IBOutlet var answerButton4: UIButton!
     @IBOutlet var judgeImageView: UIImageView!
     
     var bannerView: GADBannerView!
@@ -52,18 +50,12 @@ class QuizViewController: UIViewController {
         quizTextView.text = quizArray[0]
         answerButton1.setTitle(quizArray[2], for: .normal)
         answerButton2.setTitle(quizArray[3], for: .normal)
-        answerButton3.setTitle(quizArray[4], for: .normal)
-        answerButton4.setTitle(quizArray[5], for: .normal)
         
         // 枠線色・太さを設定
         answerButton1.layer.borderWidth = 2
         answerButton1.layer.borderColor = UIColor.black.cgColor
         answerButton2.layer.borderWidth = 2
         answerButton2.layer.borderColor = UIColor.black.cgColor
-        answerButton3.layer.borderWidth = 2
-        answerButton3.layer.borderColor = UIColor.black.cgColor
-        answerButton4.layer.borderWidth = 2
-        answerButton4.layer.borderColor = UIColor.black.cgColor
 
         // Do any additional setup after loading the view.
     }
@@ -94,16 +86,14 @@ class QuizViewController: UIViewController {
         // ○×が非表示になるまでButtonを押せなくする (ダブルタップ防止)
         answerButton1.isEnabled = false
         answerButton2.isEnabled = false
-        answerButton3.isEnabled = false
-        answerButton4.isEnabled = false
+        
         // ○×を0.5秒後に非表示する
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.judgeImageView.isHidden = true
             // ○×が非表示になったらButtonを押せるようにする
             self.answerButton1.isEnabled = true
             self.answerButton2.isEnabled = true
-            self.answerButton3.isEnabled = true
-            self.answerButton4.isEnabled = true
+
             // ○×が非表示になってから次の問題をセット
             self.nextQuiz()
         }
@@ -118,8 +108,6 @@ class QuizViewController: UIViewController {
             quizTextView.text = quizArray[0]
             answerButton1.setTitle(quizArray[2], for: .normal)
             answerButton2.setTitle(quizArray[3], for: .normal)
-            answerButton3.setTitle(quizArray[4], for: .normal)
-            answerButton4.setTitle(quizArray[5], for: .normal)
         } else {
             performSegue(withIdentifier: "toScoreVC", sender: nil)
         }
